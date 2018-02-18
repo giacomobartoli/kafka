@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52f099f7-33d8-469e-8c4a-73084ea5ef53" name="Default" comment="" />
+    <list default="true" id="52f099f7-33d8-469e-8c4a-73084ea5ef53" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Configuration.java" afterPath="$PROJECT_DIR$/src/main/java/Configuration.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerLoop.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerLoop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ConsumerLoop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
@@ -92,11 +104,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/KafkaSparkPopularHashTags.scala" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaSparkPopularHashTags.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaTwitterProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/KafkaConsumer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ConsumerLoop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Configuration.java" />
       </list>
     </option>
   </component>
@@ -471,14 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaTwitterProducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -499,6 +503,14 @@
             <element signature="imports" expanded="true" />
             <element signature="e#787#803#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
