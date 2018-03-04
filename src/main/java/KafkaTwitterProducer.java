@@ -1,10 +1,7 @@
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.LinkedBlockingQueue;
-
 import twitter4j.*;
-import twitter4j.conf.*;
-
 import twitter4j.StallWarning;
 import twitter4j.Status;
 import twitter4j.StatusDeletionNotice;
@@ -12,12 +9,9 @@ import twitter4j.StatusListener;
 import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
 import twitter4j.conf.ConfigurationBuilder;
-import twitter4j.json.DataObjectFactory;
-
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import kafka.producer.KeyedMessage;
 
 /**
  * A Kafka Producer that gets tweets on certain keywords
@@ -29,8 +23,11 @@ import kafka.producer.KeyedMessage;
 
 
 
-public class KafkaTwitterProducer {
+public class KafkaTwitterProducer  {
+
+
     public static void main(String[] args) throws Exception {
+
         final LinkedBlockingQueue<Status> queue = new LinkedBlockingQueue<Status>(1000);
 
 
@@ -119,7 +116,7 @@ public class KafkaTwitterProducer {
                     producer.send(r);
 
                     // Use this log to see record structure in the kafka topic
-                    System.out.println("TopicName: "+Configuration.topicName+" Int: "+j+" Record: "+ret.getText());
+                    //System.out.println("TopicName: "+Configuration.topicName+" Int: "+j+" Record: "+ret.getText());
                 }
             }
         }
