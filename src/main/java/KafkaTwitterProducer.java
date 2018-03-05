@@ -25,6 +25,12 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 
 public class KafkaTwitterProducer  {
 
+    /*
+     0 -> download tweets
+     1 --> download Source
+    */
+    private static Integer myInt = 1;
+
 
     public static void main(String[] args) throws Exception {
 
@@ -112,8 +118,13 @@ public class KafkaTwitterProducer  {
                     System.out.println("Hashtag: " + hashtage.getText());
                     // producer.send(new ProducerRecord<String, String>(
                     // topicName, Integer.toString(j++), hashtage.getText()));
-                    ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), ret.getText());
-                    producer.send(r);
+                    if(myInt==0) {
+                        ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), ret.getText());
+                        producer.send(r);
+                    }else{
+                        ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), "SSOURCE: "+ret.getSource());
+                        producer.send(r);
+                    }
 
                     // Use this log to see record structure in the kafka topic
                     //System.out.println("TopicName: "+Configuration.topicName+" Int: "+j+" Record: "+ret.getText());

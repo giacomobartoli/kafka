@@ -5,5 +5,5 @@ public class Configuration {
     public static String accessToken = "2366239772-m0dtL0wWdisuO7ac0IUgfH2M3c2dhTGZRp2NS5c";
     public static String accessTokenSecret = "27ttqxVdqZbo6CRNkr0yHXLQpT3Un3lAduMWBgKXdEN0O";
     public static String topicName = "tweets2";
-    public static String hashtag = "coffee";
+    public static String hashtag = "love";
 }
