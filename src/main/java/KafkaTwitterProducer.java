@@ -26,10 +26,11 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 public class KafkaTwitterProducer  {
 
     /*
-     0 -> download tweets
+     0 --> download tweets
      1 --> download Source
+     2 --> download Lang
     */
-    private static Integer myInt = 1;
+    private static Integer myInt = 2;
 
 
     public static void main(String[] args) throws Exception {
@@ -121,8 +122,11 @@ public class KafkaTwitterProducer  {
                     if(myInt==0) {
                         ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), ret.getText());
                         producer.send(r);
-                    }else{
+                    }else if(myInt==1){
                         ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), "SSOURCE: "+ret.getSource());
+                        producer.send(r);
+                    }else {
+                        ProducerRecord r = new ProducerRecord<String, String>(Configuration.topicName, Integer.toString(j++), "LLANG: "+ret.getUser().getLang());
                         producer.send(r);
                     }
 
