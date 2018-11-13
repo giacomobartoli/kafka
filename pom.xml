@@ -29,7 +29,7 @@
     </dependency>
     <dependency>
         <groupId>org.apache.spark</groupId>
-        <artifactId>spark-core_2.10</artifactId>
+        <artifactId>spark-core_2.20</artifactId>
         <version>1.4.1</version>
         <scope>compile</scope>
     </dependency>
